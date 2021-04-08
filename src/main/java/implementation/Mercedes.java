@@ -10,12 +10,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Qualifier("Merc")
-@PropertySource("C:\\Users\\Dell\\IdeaProjects\\nauka\\src\\properties\\ceny")
 public class Mercedes implements ICars {
     private int price;
     private String colour;
 
-    public Mercedes(@Value("${cena_mercedesa}") int price,@Value("${nazwa}") String colour) {
+    public Mercedes(@Value("17") int price,@Value("czerwnott") String colour) {
         this.price = price;
         this.colour = colour;
     }
